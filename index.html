@@ -7,7 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+        integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css"
+        integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/v5-font-face.min.css"
+        integrity="sha512-H2YXTLk5bs3DqvCfOEFsHmsjKW/qLp8SqsqVuPVwZzA5WFudPvPJisFKba2Km3sZNNBapYsZjSMTmRVcfxb5yw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/solid.min.js"
+        integrity="sha512-Cw3lrAMFnu1XhNZB73mT27VptT/2szZ1sn2MLnPq+ATkY0qu16il+xEQdo4wDZCAVnO8QZ12547AfBZhO9M9cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
@@ -15,123 +32,17 @@
 </head>
 
 <body>
-    <div class="bcg"></div>
-    <div class="bcg__gradient"></div>
     <main>
-        <div class="container container__nav">
-            <nav class="nav">
-                <a href="#about" class=" nav__item nav__item-1 no_copy">ABOUT ME</a>
-                <a href="#portfolio" class="nav__item nav__item-2 no_copy">PORTFOLIO</a>
-                <a href="#contact" class="nav__item nav__item-3 no_copy">CONTACT</a>
-                <a href="#donate" class="nav__item nav__item-4 no_copy">DONATE</a>
-            </nav>
+        <div class="container container__title">
+            <h1 class="title title__main"><span>DCN</span><span>etwork</span></h1>
         </div>
-        <div class="container container__hero">
-            <div class="hero__content">
-                <h1 id="site_title" class="hero__logo no_copy">
-                    <span class="text_accent_title">DCN</span>etwork
-                </h1>
-                <div class="hero__text no_copy">
-                    Developer<span class="animate_hide_show">.</span>
-                </div>
-            </div>
+        <div class="container container__menuItems">
+            <i class="fa-solid fa-code menu__item"></i>
+            <i class="fa-solid fa-user menu__item"></i>
+            <i class="fa-solid fa-thumbs-up menu__item"></i>
+            <i class="fa-solid fa-address-card menu__item"></i>
         </div>
     </main>
-    <article id="about" class="container container__section ">
-        <h2 class="section__title title__about">ABOUT ME</h2>
-        <div id="section-about-containers" class="section__about">
-            <div data-index="1" id="grid-about-item-1" class="grid__item grid__item-1 about__skills">
-                <div class="undertitle undertitle__skills">SKILLS</div>
-                <div class="about__skills--grid__items grid__items">
-                    <div class="about__gridgroup about__grid__items--left">
-                        <div class="image grid__image grid__image--about grid__image--about_1">
-                        </div>
-                        <div class="image grid__image grid__image--about grid__image--about_2">
-                        </div>
-                        <div class="image grid__image grid__image--about grid__image--about_3">
-                        </div>
-                        <div class="image grid__image grid__image--about grid__image--about_4">
-                        </div>
-                        <div class="image grid__image grid__image--about grid__image--about_5">
-                        </div>
-                        <div class="image grid__image grid__image--about grid__image--about_6">
-                        </div>
-                        <div class="image grid__image grid__image--about grid__image--about_7">
-                        </div>
-                    </div>
-                    <div class="about__gridgroup about__grid__items--left">
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                        <div class="grid__text grid__text-about about__raiting">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-index="2" id="grid-about-item-2" class="grid__item grid__item-2 about__exp">
-                Expirience
-            </div>
-            <div data-index="3" id="grid-about-item-3" class="grid__item grid__item-3 about__hobby">
-                Hobbys
-            </div>
-            <div data-index="4" id="grid-about-item-4" class="grid__item grid__item-5 about__current">
-                Currently doing
-            </div>
-        </div>
-    </article>
-    <article id="portfolio" class="container container__section">
-
-    </article>
-    <article id="contact" class="container container__section">
-
-    </article>
-    <article id="donate" class="container container__section">
-
-    </article>
 </body>
 
 </html>

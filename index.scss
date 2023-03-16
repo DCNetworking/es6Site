@@ -1,0 +1,123 @@
+body {
+    padding: 0 0;
+    margin: 0 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+  }
+  
+  main {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 1, 10);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    padding: 0.5rem;
+    position: relative;
+   
+  }
+  
+  .container__title {
+    user-select: none;
+    -webkit-user-select: none;
+    width: 35rem;
+    aspect-ratio: 1/1;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 21, 64);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    animation: transform_title 0.5s forwards linear;
+    h1 {
+        cursor:default;
+        color: rgb(224, 224, 255);
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:0.1em;
+        span:nth-child(1) {
+            font-size: 10rem;
+            letter-spacing: -0.4rem;
+            color: rgb(130, 142, 246);
+          }
+      }
+      ::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 0px 0px, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 255, 0)70%, rgb(79, 90, 184) 100%);    
+    }
+  }
+  .container__menuItems{
+    position: absolute;
+    border-radius: 50%;
+    rotate: 0deg;
+    width: 60rem;
+    aspect-ratio: 1/1;
+    animation: rotation 150s  linear forwards;
+    -webkit-animation: rotation 150s  linear forwards;
+    -moz-animation: rotation 150s  linear forwards;
+    .menu__item{
+        display: block;
+        top:50%;
+        left:50%;
+        width:4rem;
+        height:4rem;
+        font-size: 4rem;
+        margin: -(calc(4rem /2));
+        position: absolute;
+    }
+    $rot : 0;
+    @for $i from 1 through 4{
+        .menu__item:nth-child(#{$i}){
+            transform: 
+                rotate($rot * 1deg)
+                translate(calc(60rem/2))
+                rotate($rot * -1deg);
+            animation: showmenu 0.4s linear forwards;
+            -webkit-animation:  showmenu 0.4s linear forwards;
+            -moz-animation: showmenu 0.4s linear forwards;
+
+        }
+        $rot : $rot + (calc(360 / 4));
+    }
+  }
+@keyframes transform_title {
+    from{
+        transform: translateY(-1rem);
+    }to{
+        transform: translateY(0rem);
+    }
+}
+@keyframes showmenu {
+    from{
+        scale:(0.5);
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    to{
+        scale:(1);
+    }
+}
+@keyframes rotation {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
